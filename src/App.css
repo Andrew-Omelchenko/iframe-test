@@ -1,18 +1,4 @@
-.wrapper {
-  width: 100%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  overflow: hidden;
-}
-
-.instagramStyled {
-  display: block;
-  text-align: center;
-  width: 300px;
-}
-
-.instagramStyled iframe {
-  max-width: 100% !important;
-  min-width: 100px !important;
+.fb-post {
+    width: 100%;
+    text-align: center;
 }
