@@ -29,14 +29,6 @@ class App extends Component {
 
     return (
       <div>
-        <AppStyled>
-          <FacebookProvider appId="390050348463189">
-            <EmbeddedPost
-              href="https://www.facebook.com/OlenaDobrzhanska/posts/2043448672390166?__tn__=-UC-R"
-              width={width}
-            />
-          </FacebookProvider>
-        </AppStyled>
         <div>
           <FacebookProvider appId="390050348463189">
             <EmbeddedPost
@@ -45,6 +37,14 @@ class App extends Component {
             />
           </FacebookProvider>
         </div>
+        <AppStyled>
+          <FacebookProvider appId="390050348463189">
+            <EmbeddedPost
+              href="https://www.facebook.com/OlenaDobrzhanska/posts/2043448672390166?__tn__=-UC-R"
+              width={width}
+            />
+          </FacebookProvider>
+        </AppStyled>
       </div>
     );
   }
