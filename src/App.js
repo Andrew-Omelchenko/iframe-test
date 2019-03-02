@@ -6,8 +6,10 @@ import AppStyled from './App.styled.js';
 
 const isMobile = () => {
   const isInAppMode = (
-    "standalone" in navigator && navigator.standalone) ||
-    (window.chrome && window.top.chrome.app && window.top.chrome.app.isInstalled
+      "standalone" in navigator && navigator.standalone
+    ) ||
+    (
+      window.chrome && window.top.chrome.app && window.top.chrome.app.isInstalled
     );
 
   const ua = navigator.userAgent;
