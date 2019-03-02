@@ -1,8 +1,6 @@
-import styled, {css} from 'styled-components';
-import {FacebookProvider} from 'react-facebook';
+import styled from 'styled-components';
 
-const AppStyled = styled.div`
-`;
+const AppStyled = styled.div``;
 
 AppStyled.Block = styled.div`
   display: block; // div is already a block, added only for consistency
