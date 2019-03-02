@@ -28,24 +28,24 @@ class App extends Component {
     console.log('calc width', width);
 
     return (
-      <div>
-        <div>
+      <AppStyled>
+        <AppStyled.Block>
           <FacebookProvider appId="390050348463189">
             <EmbeddedPost
               href="https://www.facebook.com/OlenaDobrzhanska/posts/2043448672390166?__tn__=-UC-R"
               width={width}
             />
           </FacebookProvider>
-        </div>
-        <AppStyled>
+        </AppStyled.Block>
+        <AppStyled.Flex>
           <FacebookProvider appId="390050348463189">
             <EmbeddedPost
               href="https://www.facebook.com/OlenaDobrzhanska/posts/2043448672390166?__tn__=-UC-R"
               width={width}
             />
           </FacebookProvider>
-        </AppStyled>
-      </div>
+        </AppStyled.Flex>
+      </AppStyled>
     );
   }
 }
