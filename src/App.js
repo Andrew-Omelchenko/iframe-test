@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 import { FacebookProvider, EmbeddedPost } from 'react-facebook';
 
 //Styles
-import './App.css';
+import AppStyled from './App.styled.js';
 
 class App extends Component {
   isMobile() {
@@ -29,16 +29,22 @@ class App extends Component {
 
     return (
       <div>
-        <FacebookProvider
-          class="provider"
-          appId="390050348463189"
-        >
-          <EmbeddedPost
-            class="post"
-            href="https://www.facebook.com/OlenaDobrzhanska/posts/2043448672390166?__tn__=-UC-R"
-            width={window.innerWidth - 24}
-          />
-        </FacebookProvider>
+        <AppStyled>
+          <FacebookProvider appId="390050348463189">
+            <EmbeddedPost
+              href="https://www.facebook.com/OlenaDobrzhanska/posts/2043448672390166?__tn__=-UC-R"
+              width={width}
+            />
+          </FacebookProvider>
+        </AppStyled>
+        <div>
+          <FacebookProvider appId="390050348463189">
+            <EmbeddedPost
+              href="https://www.facebook.com/OlenaDobrzhanska/posts/2043448672390166?__tn__=-UC-R"
+              width={width}
+            />
+          </FacebookProvider>
+        </div>
       </div>
     );
   }
